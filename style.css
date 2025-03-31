@@ -1,0 +1,112 @@
+@font-face{
+    font-family: 'Square';
+    src: url('Square.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Square", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Calc Container */
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.calc-container{
+    padding: 1rem;
+    width: 350px;
+    height: 525px;
+    background-color: pink;
+    border-radius: 8px;
+    box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.2);
+}
+
+.calc-container .calc-top{
+    height: 15%;
+}
+
+.calc-top #calc-result{
+    width: 100%;
+    height: 100%;
+    border: solid 5px rgb(226, 135, 150);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: rgb(182, 109, 121);
+    font-weight: 400;
+}
+
+.calc-bottom{
+    padding-top: 1rem;
+    height: 85%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* horizontal */
+    grid-template-columns: repeat(4, 1fr); /* vertical */
+    gap: 10px;
+}
+
+.calc-bottom button{
+    font-size: 30px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(182, 109, 121);
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(129, 77, 86);
+}
+
+/***********************************/
+/* Responsive */
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .calc-container{
+        padding: 0.8rem;
+        width: 225px;
+        height: 325px;
+    }
+
+    .calc-top #calc-result{
+        font-size: 1.5rem;
+        padding-left: 8px;
+        line-height: 1.8rem;
+    }
+
+    .calc-bottom{
+        gap: 15px;
+    }
+    
+    .calc-bottom button{
+        font-size: 20px;
+    }
+
+}

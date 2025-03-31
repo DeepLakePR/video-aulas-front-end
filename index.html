@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <!-- Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon & Style -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/b086bd1408.js" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Calculadora kkkk</title>
+</head>
+
+<body>
+    
+    <h1>
+        Calculadora
+        <br/>
+        🌹
+    </h1>
+    
+    <div class="calc-container">
+
+        <div class="calc-top">
+        
+            <div id="calc-result">00.00</div>
+
+        </div> <!-- Calc Top -->
+
+
+        <div class="calc-bottom">
+
+            <button onclick="appendCalc('7')">7</button>
+            <button onclick="appendCalc('8')">8</button>
+            <button onclick="appendCalc('9')">9</button>
+            <button onclick="appendCalc('+')">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <button onclick="appendCalc('4')">4</button>
+            <button onclick="appendCalc('5')">5</button>
+            <button onclick="appendCalc('6')">6</button>
+            <button onclick="appendCalc('-')">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <button onclick="appendCalc('1')">1</button>
+            <button onclick="appendCalc('2')">2</button>
+            <button onclick="appendCalc('3')">3</button>
+            <button onclick="appendCalc('*')">
+                <i class="fa-solid fa-asterisk"></i>
+            </button>
+
+            <button onclick="clearCalc()">C</button>
+            <button onclick="appendCalc('0')">0</button>
+            <button onclick="calc()">=</button>
+            <button onclick="appendCalc('/')">
+                <i class="fa-solid fa-divide"></i>
+            </button>
+
+        </div> <!-- Calc Bottom -->
+
+    </div> <!-- Calc Container -->
+
+    <!-------------------------------->
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="robson-caminhoes.js"></script>
+
+</body>
+
+</html>
